@@ -1,0 +1,24 @@
+body{
+  background-color: gray;
+}
+
+input:disabled {
+  border: 1px solid var(--primary-color);
+}
+
+p:nth-child(even) {
+  color: blue;
+}
+
+p::first-letter {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.title__max{
+  color: var(--primary-color);
+}
+.title__max::before {
+  content: '* ';
+  background-color: yellow;
+}

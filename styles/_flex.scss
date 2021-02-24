@@ -1,0 +1,31 @@
+.flex {
+  border: 2px solid var(--primary-color);
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+
+  p {
+    color: var(--primary-color);
+  }
+
+  &__content {
+    border: 2px solid yellow;
+    flex-grow: 1;
+
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+
+  &__img {
+    border: 2px solid yellow;
+    width: 30%;
+    margin-left: 15px;
+  }
+
+
+  & *:not(&__img) {
+    background-color: hotpink;
+  }
+}
